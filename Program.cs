@@ -1,4 +1,6 @@
-﻿namespace Pong;
+﻿using System.Text;
+
+namespace Pong;
 
 class Program
 {

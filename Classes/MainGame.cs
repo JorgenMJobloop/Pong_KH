@@ -34,5 +34,12 @@ public sealed class MainGame
         int paddleHeight = 4;
         int centerY = height / 2 - paddleHeight / 2;
 
+        _leftPaddle = new Paddle(x: 2, y: centerY, height: paddleHeight);
+        _rightPaddle = new Paddle(x: width - 3, y: centerY, height: paddleHeight);
+
+        _ball = new Ball(width / 2, height / 2, velocityX: -1, velocityY: -1);
+
+        _renderer = new Renderer(width, height);
+        _inputHandler = new InputHandler();
     }
 }

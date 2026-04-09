@@ -19,5 +19,17 @@ public sealed class Ball
 
     // the methods below, handles the ball's physics
 
+    public void Move()
+    {
+        X += VelocityX;
+        Y += VelocityY;
+    }
 
+    public void Reset(int x, int y, int velocityX, int velocityY)
+    {
+        X = x;
+        Y = y;
+        VelocityX = velocityX;
+        VelocityY = velocityY;
+    }
 }
