@@ -5,7 +5,7 @@ public sealed class Ball
     /// </summary>
     public int X { get; set; }
     public int Y { get; set; }
-    // physics propertier
+    // physics properties
     public int VelocityX { get; set; }
     public int VelocityY { get; set; }
 
